@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "clarityai_cc"
+version = "0.1.0"
+description = ""
+authors = ["Roncal, Tasio <tasio.roncal@adidas.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+pytest = "^6.2"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+
+[tool.poetry.scripts]
+log-parser = "clarityai_cc.main:main"
+log-parser-streaming = "clarityai_cc.main:main_streaming"
