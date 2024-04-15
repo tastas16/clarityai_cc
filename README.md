@@ -15,8 +15,9 @@ This Python tool, developed for the ClarityAI code challenge, is designed to par
 
 ## Installation
 
-1. Clone the repository to your local machine using `git clone https://github.com/yourusername/log-parser.git`.
+1. Clone the repository to your local machine using `git clone https://github.com/tastas16/clarityai_cc.git`.
 2. Navigate to the project directory.
+3. Create a virtual environment with Python=3.10 and poetry.
 3. Install the project and its dependencies with Poetry: `poetry install`
 
 ## Usage
@@ -31,7 +32,7 @@ Replace `path/to/logfile` with the path to your log file, the date-time strings 
 
 2. Example command:
 
-    `poetry run log-parser ./data/connections.log "2021-04-01 00:00:00" "2021-04-02 00:00:00" quark`
+    `poetry run log-parser ./input_data/input-file-10000.txt "2019-08-12 22:00:04" "2019-08-13 21:59:58" Maronda`
 
 This will output the hostnames that were connected to 'quark' between April 1, 2021, and April 2, 2021.
 
